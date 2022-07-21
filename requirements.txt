@@ -1,0 +1,6 @@
+mlxtend
+scipy
+numpy
+pandas
+scikit-learn
+statsmodels

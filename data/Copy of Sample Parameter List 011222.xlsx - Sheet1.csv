@@ -1,0 +1,189 @@
+Sample,Power (W),Speed (mm/s),Hatch (mm),Layer (mm),Laser Focus (mm),Double Shot?,Scan Statagy,Fail?,Sent to,file name,Repeat of sample
+1,19,300,0.01,0.15,-7,N,Bilateral,N,,,
+2,19,350,0.01,0.15,-7,N,Bilateral,N,,,
+3,19,400,0.01,0.15,-7,N,Bilateral,N,,,
+4,19,450,0.01,0.15,-7,N,Bilateral,N,,,
+5,19,500,0.01,0.15,-7,N,Bilateral,N,,,
+6,13,300,0.01,0.15,-7,N,Bilateral,Y,,,
+7,13,350,0.01,0.15,-7,N,Bilateral,N,,,
+8,13,400,0.01,0.15,-7,N,Bilateral,Y,,,
+9,13,450,0.01,0.15,-7,N,Bilateral,N,,,
+10,13,500,0.01,0.15,-7,N,Bilateral,Y,,,
+11,16,300,0.01,0.15,-7,N,Bilateral,Y,,,
+12,16,350,0.01,0.15,-7,N,Bilateral,Y,,,
+13,16,400,0.01,0.15,-7,N,Bilateral,N,,,
+14,16,450,0.01,0.15,-7,N,Bilateral,Y,,,
+15,16,500,0.01,0.15,-7,N,Bilateral,N,,,
+16,20,300,0.01,0.15,-7,N,Bilateral,Y,,,
+17,20,350,0.01,0.15,-7,N,Bilateral,Y,,,
+18,20,400,0.01,0.15,-7,N,Bilateral,Y,,,
+19,20,450,0.01,0.15,-7,N,Bilateral,Y,,,
+20,20,500,0.01,0.15,-7,N,Bilateral,Y,,,
+21,25,300,0.01,0.15,-7,N,Bilateral,Y,,,
+22,25,350,0.01,0.15,-7,N,Bilateral,Y,,,
+23,25,400,0.01,0.15,-7,N,Bilateral,Y,,,
+24,25,450,0.01,0.15,-7,N,Bilateral,Y,,,
+25,25,500,0.01,0.15,-7,N,Bilateral,Y,,,
+26,30,300,0.01,0.15,-7,N,Bilateral,N,Saniya,,
+27,30,350,0.01,0.15,-7,N,Bilateral,N,,,
+28,30,400,0.01,0.15,-7,N,Bilateral,N,,,
+29,30,450,0.01,0.15,-7,N,Bilateral,N,,,
+30,30,500,0.01,0.15,-7,N,Bilateral,N,,,
+31,20,300,0.02,0.1,-7,N,Bilateral,N,,,
+32,20,350,0.02,0.1,-7,N,Bilateral,N,Saniya,,
+33,20,400,0.02,0.1,-7,N,Bilateral,N,,,
+34,20,450,0.02,0.1,-7,N,Bilateral,N,,,
+35,20,500,0.02,0.1,-7,N,Bilateral,N,,,
+36,25,300,0.02,0.1,-7,N,Bilateral,N,,,
+37,25,350,0.02,0.1,-7,N,Bilateral,N,,,
+38,25,400,0.02,0.1,-7,N,Bilateral,N,,,
+39,25,450,0.02,0.1,-7,N,Bilateral,N,Saniya,,
+40,25,500,0.02,0.1,-7,N,Bilateral,N,,,
+41,30,300,0.02,0.1,-7,N,Bilateral,N,,,
+42,30,350,0.02,0.1,-7,N,Bilateral,N,Saniya,,
+43,30,400,0.02,0.1,-7,N,Bilateral,N,Saniya,,
+44,30,450,0.02,0.1,-7,N,Bilateral,N,,,
+45,30,500,0.02,0.1,-7,Y,Bilateral,N,,,
+46,20,300,0.02,0.15,-7,Y,Bilateral,N,,,
+47,20,350,0.02,0.15,-7,Y,Bilateral,N,,,
+48,20,400,0.02,0.15,-7,Y,Bilateral,N,,,
+49,20,450,0.02,0.15,-7,Y,Bilateral,N,,,
+50,20,500,0.02,0.15,-7,Y,Bilateral,N,,,
+51,25,300,0.02,0.15,-7,Y,Bilateral,N,,,
+52,25,350,0.02,0.15,-7,Y,Bilateral,N,,,
+53,25,400,0.02,0.15,-7,Y,Bilateral,N,,,
+54,25,450,0.02,0.15,-7,Y,Bilateral,N,,,
+55,25,500,0.02,0.15,-7,Y,Bilateral,N,,,
+56,30,300,0.02,0.15,-7,Y,Bilateral,N,,,
+57,30,350,0.02,0.15,-7,Y,Bilateral,N,,,
+58,30,400,0.02,0.15,-7,Y,Bilateral,N,,,
+59,30,450,0.02,0.15,-7,Y,Bilateral,N,,,
+60,30,500,0.02,0.15,-7,Y,Bilateral,N,,,
+61,16,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,,
+62,18,500,0.01,0.15,-2,Y,Bilateral,N,,,
+63,20,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,,
+64,22,500,0.01,0.15,-2,Y,Bilateral,N,,,
+65,24,500,0.01,0.15,-2,Y,Bilateral,N,,,
+66,16,500,0.025,0.15,-2,Y,Bilateral,N,,,
+67,18,500,0.025,0.15,-2,Y,Bilateral,N,,,
+68,20,500,0.025,0.15,-2,Y,Bilateral,N,,,
+69,22,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,,
+70,24,500,0.025,0.15,-2,Y,Bilateral,N,,,
+71,16,500,0.0375,0.15,-2,Y,Bilateral,N,,,
+72,18,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,,
+73,20,500,0.0375,0.15,-2,Y,Bilateral,N,,,
+74,22,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,,
+75,24,500,0.0375,0.15,-2,Y,Bilateral,N,,,
+76,16,500,0.01,0.15,-7,Y,Bilateral,N,Saniya,,
+77,18,500,0.01,0.15,-7,Y,Bilateral,N,Saniya,,
+78,20,500,0.01,0.15,-7,Y,Bilateral,N,,,
+79,22,500,0.01,0.15,-7,Y,Bilateral,N,,,
+80,24,500,0.01,0.15,-7,Y,Bilateral,N,,,
+81,16,500,0.025,0.15,-7,Y,Bilateral,N,,,
+82,18,500,0.025,0.15,-7,Y,Bilateral,N,,,
+83,20,500,0.025,0.15,-7,Y,Bilateral,N,,,
+84,22,500,0.025,0.15,-7,Y,Bilateral,N,Saniya,,
+85,24,500,0.025,0.15,-7,Y,Bilateral,N,,,
+86,16,500,0.0375,0.15,-7,Y,Bilateral,N,,,
+87,18,500,0.0375,0.15,-7,Y,Bilateral,N,,,
+88,20,500,0.0375,0.15,-7,Y,Bilateral,N,,,
+89,22,500,0.0375,0.15,-7,Y,Bilateral,N,Saniya,,
+90,24,500,0.0375,0.15,-7,Y,Bilateral,N,,,
+91,10,500,0.01,0.15,-2,Y,Bilateral,N,,,
+92,12,500,0.01,0.15,-2,Y,Bilateral,N,,,
+93,14,500,0.01,0.15,-2,Y,Bilateral,N,,,
+94,16,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,,
+95,18,500,0.01,0.15,-2,Y,Bilateral,N,,,
+96,10,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,,
+97,12,500,0.025,0.15,-2,Y,Bilateral,N,,,
+98,14,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,,
+99,16,500,0.025,0.15,-2,Y,Bilateral,N,,,
+100,18,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,,
+101,10,500,0.0375,0.15,-2,Y,Bilateral,N,,,
+102,12,500,0.0375,0.15,-2,Y,Bilateral,N,,,
+103,14,500,0.0375,0.15,-2,Y,Bilateral,N,,,
+104,16,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,,
+105,18,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,,
+106,10,700,0.01,0.15,-2,Y,Bilateral,N,,,
+107,12,700,0.01,0.15,-2,Y,Bilateral,N,,,
+108,14,700,0.01,0.15,-2,Y,Bilateral,N,,,
+109,16,700,0.01,0.15,-2,Y,Bilateral,N,Saniya, ,
+110,18,700,0.01,0.15,-2,Y,Bilateral,N,,,
+111,10,700,0.025,0.15,-2,Y,Bilateral,N,,,
+112,12,700,0.025,0.15,-2,Y,Bilateral,N,,,
+113,14,700,0.025,0.15,-2,Y,Bilateral,N,Saniya,,
+114,16,700,0.025,0.15,-2,Y,Bilateral,N,,,
+115,18,700,0.025,0.15,-2,Y,Bilateral,N,Saniya,,
+116,10,700,0.0375,0.15,-2,Y,Bilateral,N,,,
+117,12,700,0.0375,0.15,-2,Y,Bilateral,N,,,
+118,14,700,0.0375,0.15,-2,Y,Bilateral,N,,,
+119,16,700,0.0375,0.15,-2,Y,Bilateral,N,,,
+120,18,700,0.0375,0.15,-2,Y,Bilateral,N,Saniya,,
+121,16,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 61-75_001,61
+122,18,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 61-75_001,62
+123,20,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 61-75_001,63
+124,22,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 61-75_001,64
+125,24,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 61-75_001,65
+126,16,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 61-75_001,66
+127,18,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 61-75_001,67
+128,20,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 61-75_001,68
+129,22,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 61-75_001,69
+130,24,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 61-75_001,70
+131,16,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 61-75_001,71
+132,18,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 61-75_001,72
+133,20,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 61-75_001,73
+134,22,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 61-75_001,74
+135,24,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 61-75_001,75
+136,10,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 91-105_001,91
+137,12,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 91-105_001,92
+138,14,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,93
+139,16,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 91-105_001,94
+140,18,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 91-105_001,95
+141,10,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,96
+142,12,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,97
+143,14,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,98
+144,16,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,99
+145,18,500,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,100
+146,10,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,101
+147,12,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,102
+148,14,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,103
+149,16,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,104
+150,18,500,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 91-105_001,105
+151,10,700,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,106
+152,12,700,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,107
+153,14,700,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 106-120_001,108
+154,16,700,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 106-120_001,109
+155,18,700,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,110
+156,10,700,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,111
+157,12,700,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,112
+158,14,700,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,113
+159,16,700,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,114
+160,18,700,0.025,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,115
+161,10,700,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,116
+162,12,700,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,117
+163,14,700,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,118
+164,16,700,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,119
+165,18,700,0.0375,0.15,-2,Y,Bilateral,N,Saniya,Repeat 106-120_001,120
+166,10,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 3 set _001-2,91
+167,12,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 3 set _001-2,92
+168,14,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _001-2,93
+169,16,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 3 set _001-2,94
+170,18,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _001-2,95
+171,16,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _001-2,61
+172,18,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _001-2,62
+173,20,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _001-2,63
+174,22,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 3 set _001-2,64
+175,24,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _001-2,65
+176,10,700,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 3 set _001-2,106
+177,12,700,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _001-2,107
+178,14,700,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _001-2,108
+179,16,700,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 3 set _001-2,109
+180,18,700,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _001-2,110
+181,10,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _003,91
+182,12,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _003,92
+183,16,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 3 set _003,94
+184,18,500,0.01,0.15,-2,Y,Bilateral,Y,Saniya,Repeat 3 set _003,95
+185,22,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _003,64
+186,24,500,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _003,65
+187,10,700,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _003,106
+188,16,700,0.01,0.15,-2,Y,Bilateral,N,Saniya,Repeat 3 set _003,109

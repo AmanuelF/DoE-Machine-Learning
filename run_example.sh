@@ -2,6 +2,20 @@
 
 pip3 install -q -r requirements.txt
 
-python3 exploration.py
+python3 exploration.py \
+	--parameter_fpath "data/Copy of Sample Parameter List 011222.xlsx - Sheet1.csv" \
+	--ml_fpath "data/OA machine learning Jun. 15-22.xlsx - All Data.csv" \
+	--linear_correlation_ouput_fpath "Results/linear_correlation_w_PF_at_77oC.xlsx"
 
-python3 modeling.py
+python3 modeling.py \
+	--parameter_fpath "data/Copy of Sample Parameter List 011222.xlsx - Sheet1.csv" \
+	--ml_fpath "data/OA machine learning Jun. 15-22.xlsx - All Data.csv" \
+	--linear_correlation_ouput_fpath "Results/linear_correlation_w_PF_at_77oC.xlsx" \
+	--modeling "regression" \
+	--w_cross_validation False \
+	--w_synthetic_data False \
+	--w_important_Features False \
+	--w_grid_search False \
+	--synthetic_data_size 100 \
+	--train_test_split_ratio 0.3
+

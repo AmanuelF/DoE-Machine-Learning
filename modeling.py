@@ -1,5 +1,7 @@
 #/bin/python3
 
+import argparse
+
 import pandas as pd
 import numpy as np
 import os
@@ -706,22 +708,54 @@ class Modeling(object):
 def main():
   # Modeling
 
+  parser = argparse.ArgumentParser()
+
+  parser.add_argument("-a", "--parameter_fpath", required=True, help="parameters", default="data/Copy of Sample Parameter List 011222.xlsx - Sheet1.csv")
+  parser.add_argument("-b", "--ml_fpath", required=True, help="ml", default="data/OA machine learning Jun. 15-22.xlsx - All Data.csv")
+  parser.add_argument("-c", "--linear_correlation_ouput_fpath", required=True, help="ouput_corr", default="Results/linear_correlation_w_PF_at_77oC.xlsx")
+
+  parser.add_argument("-d", "--modeling", required=True, help="modeling", default="regression")
+  parser.add_argument("-e", "--w_cross_validation", required=True, help="CV", default=False)
+  parser.add_argument("-f", "--w_synthetic_data", required=True, help="synthetic data", default=False)
+  parser.add_argument("-g", "--w_important_Features", required=True, help="important features", default=False)
+  parser.add_argument("-s", "--w_grid_search", required=True, help="grid search", default=False)
+  parser.add_argument("-i", "--synthetic_data_size", required=True, help="synthetic data size", default=100)
+  parser.add_argument("-j", "--train_test_split_ratio", required=True, help="train test split ratio", default=0.3)
+
+
+  args = parser.parse_args()
+   
+  parameter_fpath = args.parameter_fpath
+  ml_fpath = args.ml_fpath
+  output_filename = args.linear_correlation_ouput_fpath
+
+  modeling = args.modeling
+  w_cross_validation = eval(args.w_cross_validation)
+  w_synthetic_data = eval(args.w_synthetic_data)
+  
+  w_important_Features = eval(args.w_important_Features)
+  w_grid_search = eval(args.w_grid_search)
+  synthetic_data_size = int(args.synthetic_data_size)
+  train_test_split_ratio = float(args.train_test_split_ratio)
+
+
+
   M = Modeling() # Instantiate a modeling object
 
-  modeling="regression"    # regression w.r.t power factor at 70 or type in classification w.r.t seebeck coefficient
+  '''
+  modeling="classification"    # regression w.r.t power factor at 70 or type in classification w.r.t seebeck coefficient
   w_cross_validation = False  # applicable for both regression and classification tasks
   w_synthetic_data = False
   w_important_Features = False
   w_grid_search = False
   synthetic_data_size = 100
-
   train_test_split_ratio = 0.3
-  
   
   parameter_fpath = "data/Copy of Sample Parameter List 011222.xlsx - Sheet1.csv"
   ml_fpath = "data/OA machine learning Jun. 15-22.xlsx - All Data.csv"
   output_filename = "Results/linear_correlation_w_PF_at_77oC.xlsx"
-    
+  '''
+
   _, _, df_total = E()._read_data(parameter_fpath, ml_fpath)
 
 

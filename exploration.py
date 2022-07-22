@@ -1,5 +1,7 @@
 #/bin/python3
 
+import argparse
+
 import pandas as pd
 import numpy as np
 import os
@@ -117,11 +119,26 @@ class Exploration(object):
 def main():
   # Data Exploration
 
+  parser = argparse.ArgumentParser()
+
+  parser.add_argument("-a", "--parameter_fpath", required=True, help="parameters", default="data/Copy of Sample Parameter List 011222.xlsx - Sheet1.csv")
+  parser.add_argument("-b", "--ml_fpath", required=True, help="ml", default="data/OA machine learning Jun. 15-22.xlsx - All Data.csv")
+  parser.add_argument("-c", "--linear_correlation_ouput_fpath", required=True, help="ouput_corr", default="Results/linear_correlation_w_PF_at_77oC.xlsx")
+
+
+  args = parser.parse_args()
+   
+  parameter_fpath = args.parameter_fpath
+  ml_fpath = args.ml_fpath
+  output_filename = args.linear_correlation_ouput_fpath
+
   E = Exploration()  # instantiate exploration object
 
+  '''
   parameter_fpath = "data/Copy of Sample Parameter List 011222.xlsx - Sheet1.csv"
   ml_fpath = "data/OA machine learning Jun. 15-22.xlsx - All Data.csv"
   output_filename = "Results/linear_correlation_w_PF_at_77oC.xlsx"
+  '''
 
   data_parameter, data_ml, df_total = E._read_data(parameter_fpath, ml_fpath)
 

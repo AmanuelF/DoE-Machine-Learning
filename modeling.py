@@ -53,7 +53,11 @@ from mlxtend.evaluate import paired_ttest_5x2cv
 
 import matplotlib.pyplot as plt
 
+import warnings
+
 from exploration import Exploration as E
+
+warnings.filterwarnings("ignore")
 
 # Modeling
 class Modeling(object):
@@ -162,8 +166,28 @@ class Modeling(object):
 
     os.makedirs(f"Results/Errors", exist_ok=True)
     error_scores.to_excel(f"Results/Errors/{modelName}_samples_error.xlsx")
+    error_scores.to_csv(f"Results/Errors/{modelName}_samples_error.csv", index=False)
 
     X_test_raw.to_excel("Results/test_samples.xlsx")
+    X_test_raw.to_csv("Results/test_samples.csv", index=False)
+
+
+
+  def _plot_feature_importance_hist(self, modelName, trained_model, X_train, y_train, features):
+    perm_importance = permutation_importance(trained_model, X_train, y_train)
+
+    features = np.array(features)
+
+    sorted_idx = perm_importance.importances_mean.argsort()
+
+    plt.figure()
+    plt.barh(features[sorted_idx], perm_importance.importances_mean[sorted_idx], )
+    plt.title(modelName)
+    plt.xlabel("Permutation Importance")
+
+
+    os.makedirs("feature_importance_plots", exist_ok=True)  # create the directory to store the plots
+    plt.savefig(f"feature_importance_plots/{modelName}")   # save the plots to the file system
 
 
   def _determine_feature_importance(self, modelName, trained_model, features, X_train, y_train):
@@ -171,21 +195,7 @@ class Modeling(object):
     if modelName in ["Naive Bayes", "Logistic Regression", "Random Forest", "BaggingClassifier",
                      "AdaBoostClassifier", "Decision Tree", "LinearSVM", "PolySVM", "RBFSVM", "MLP"]:
 
-      perm_importance = permutation_importance(trained_model, X_train, y_train)
-
-      features = np.array(features)
-
-      sorted_idx = perm_importance.importances_mean.argsort()
-
-      plt.figure()
-      plt.barh(features[sorted_idx], perm_importance.importances_mean[sorted_idx], )
-      plt.title(modelName)
-      plt.xlabel("Permutation Importance")
-
-
-      os.makedirs("feature_importance_plots", exist_ok=True)  # create the directory to store the plots
-      plt.savefig(f"feature_importance_plots/{modelName}")   # save the plots to the file system
-
+      self._plot_feature_importance_hist(modelName, trained_model, X_train, y_train, features)
 
     
     if (modelName == "Linear Regression" or 
@@ -194,78 +204,24 @@ class Modeling(object):
         modelName == "ElasticNet"
         ):
 
-      perm_importance = permutation_importance(trained_model, X_train, y_train)
-
-      features = np.array(features)
-
-      sorted_idx = perm_importance.importances_mean.argsort()
-
-      plt.figure()
-      plt.barh(features[sorted_idx], perm_importance.importances_mean[sorted_idx], )
-      plt.title(modelName)
-      plt.xlabel("Permutation Importance")
-
-
-      os.makedirs("feature_importance_plots", exist_ok=True)  # create the directory to store the plots
-      plt.savefig(f"feature_importance_plots/{modelName}")   # save the plots to the file system
-
+      self._plot_feature_importance_hist(modelName, trained_model, X_train, y_train, features)
     
     if (modelName == "LinearSVR" or 
         modelName == "PolySVR" or 
         modelName == "RBFSVR"):
-      
-      perm_importance = permutation_importance(trained_model, X_train, y_train)
 
-      features = np.array(features)
-
-      sorted_idx = perm_importance.importances_mean.argsort()
-
-      plt.figure()
-      plt.barh(features[sorted_idx], perm_importance.importances_mean[sorted_idx], )
-      plt.title(modelName)
-      plt.xlabel("Permutation Importance")
-
-
-      os.makedirs("feature_importance_plots", exist_ok=True)  # create the directory to store the plots
-      plt.savefig(f"feature_importance_plots/{modelName}")   # save the plots to the file system
+      self._plot_feature_importance_hist(modelName, trained_model, X_train, y_train, features)
 
     if modelName == "DecisionTreeRegressor":
-      perm_importance = permutation_importance(trained_model, X_train, y_train)
 
-
-      features = np.array(features)
-
-      sorted_idx = perm_importance.importances_mean.argsort()
-
-      plt.figure()
-      plt.barh(features[sorted_idx], perm_importance.importances_mean[sorted_idx], )
-      plt.title(modelName)
-      plt.xlabel("Permutation Importance")
-
-
-      os.makedirs("feature_importance_plots", exist_ok=True)  # create the directory to store the plots
-      plt.savefig(f"feature_importance_plots/{modelName}")   # save the plots to the file system
+      self._plot_feature_importance_hist(modelName, trained_model, X_train, y_train, features)
 
     if (modelName == "BaggingRegressor" or 
         modelName == "AdaBoostRegressor" or 
         modelName == "MLPRegressor"):
+
+      self._plot_feature_importance_hist(modelName, trained_model, X_train, y_train, features)
       
-
-      perm_importance = permutation_importance(trained_model, X_train, y_train)
-
-      features = np.array(features)
-
-      sorted_idx = perm_importance.importances_mean.argsort()
-
-      plt.figure()
-      plt.barh(features[sorted_idx], perm_importance.importances_mean[sorted_idx], )
-      plt.title(modelName)
-      plt.xlabel("Permutation Importance")
-
-
-      os.makedirs("feature_importance_plots", exist_ok=True)  # create the directory to store the plots
-      plt.savefig(f"feature_importance_plots/{modelName}")   # save the plots to the file system
-
 
   def _get_seebeck_positive_negative_size(self, df):
     df_total = copy.deepcopy(df)
@@ -281,7 +237,7 @@ class Modeling(object):
     print(pd.unique(df_total[target]))
     print(df_total[target].value_counts())
 
-    print(df_total[target].value_counts().plot(kind='bar').set_title(target))
+    #print(df_total[target].value_counts().plot(kind='bar').set_title(target))
 
   # Method to prepare data for regression or classification task
   def _select_modeling(self, df_total, modeling="regression", w_important_features = False):

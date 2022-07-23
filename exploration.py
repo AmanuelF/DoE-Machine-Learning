@@ -54,6 +54,9 @@ from mlxtend.evaluate import paired_ttest_5x2cv
 #%matplotlib inline
 import matplotlib.pyplot as plt
 
+import warnings
+
+warnings.filterwarnings("ignore")
 
 # Exploration
 
@@ -100,7 +103,7 @@ class Exploration(object):
     attributes = ["Power (W)", "Speed (mm/s)", "Hatch (mm)", "Layer (mm)", "Laser Focus (mm)"]
     df_total[attributes].corrwith(df_total['PF at 77oC, mW/m K2'])
     
-    print(df_total[attributes].corrwith(df_total['PF at 77oC, mW/m K2']).round(4))
+    #print(df_total[attributes].corrwith(df_total['PF at 77oC, mW/m K2']).round(4))
 
     df_total[attributes].corrwith(df_total['PF at 77oC, mW/m K2']).round(4).to_excel("Results/linear_correlation_w_PF_at_77oC.xlsx")
 

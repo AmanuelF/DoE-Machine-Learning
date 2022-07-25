@@ -51,6 +51,7 @@ import seaborn as sns
 from sklearn.neighbors import KernelDensity
 from mlxtend.evaluate import paired_ttest_5x2cv
 
+from sklearn.manifold import TSNE
 #%matplotlib inline
 import matplotlib.pyplot as plt
 
@@ -63,6 +64,30 @@ warnings.filterwarnings("ignore")
 class Exploration(object):
   def __init__(self):
     pass
+
+  def _scatterplot(self, df_total):
+    plt.rcParams.update({'font.size': 18})
+
+    plt.figure(figsize=(12,10))
+    
+    df = copy.deepcopy(df_total)
+    df = df[["Power (W)", "Speed (mm/s)", "Hatch (mm)", "Layer (mm)", "Laser Focus (mm)", 
+             "Seebeck at 77oC (350K) µV/K", "PF at 77oC, mW/m K2"]]
+
+    tsne = TSNE(random_state=0)
+    tsne_results = tsne.fit_transform(df)
+
+    tsne_results=pd.DataFrame(tsne_results, columns=['tsne1', 'tsne2'])
+
+    plt.xlabel('Component-1')
+    plt.ylabel('Component-2')
+    plt.title('TSNE Projection')
+
+    plt.scatter(tsne_results['tsne1'], tsne_results['tsne2'])
+    #plt.show()
+
+    os.makedirs("plots", exist_ok=True)  # create the directory to store the confusion matrices
+    plt.savefig("plots/tsne_plot.png")   # save the confusion matrices to the file system
 
   def _read_data(self, parameter_fpath, ml_fpath):
     data_parameter = pd.read_csv(parameter_fpath)
@@ -144,6 +169,8 @@ def main():
   '''
 
   data_parameter, data_ml, df_total = E._read_data(parameter_fpath, ml_fpath)
+
+  E._scatterplot(df_total)
 
   E._plot_parameter_hist(data_parameter)
 
